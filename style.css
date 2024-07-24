@@ -234,6 +234,7 @@ input[type="checkbox"] {
 .content-wrapper {
     transition: margin-top 0.3s ease;
     background: #000;
+    padding-top: 100px; /* Adjust this value to the height of the nav */
 }
 
 input[type="checkbox"]:checked ~ .content-wrapper {
@@ -378,6 +379,8 @@ section {
 body {
     background: #050505;
     color: #fff;
+        display: flex;
+        flex-direction: column;
 }
 
 .image {
@@ -464,4 +467,38 @@ body {
     height: auto;
     animation: slideInFromTop 1s ease-out forwards;
     clip-path: inset(0 0 100% 0);
+}
+.social-footer {
+    padding: 10px; /* Adjust padding if needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon {
+    width: 40px; /* Adjust this size as needed */
+    height: 40px; /* Adjust this size as needed */
+    margin: 0 10px; /* Spacing between icons */
+    object-fit: contain; /* Ensures aspect ratio is maintained */
+}
+
+.social-icon:hover {
+    opacity: 0.8; /* Slight hover effect */
+}
+.social-header{
+    font-size: 20px;
+}
+.content-wrapper {
+    flex: 1; /* Ensures that the content area takes up remaining space */
+    background: #000;
+    padding-top: 100px; /* Adjust this value to the height of the nav */
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
