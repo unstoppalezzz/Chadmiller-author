@@ -533,25 +533,19 @@ html, body {
 .image-container#info.visible .text {
     opacity: 1; /* Final opacity */
 }
-.image-list {
-    display: block; /* Ensure the items stack vertically */
-    margin: 0 auto; /* Center align the list */
-}
-
 .image-item {
     display: flex; /* Align image and text side by side */
     align-items: center; /* Center items vertically */
-    margin-bottom: 20px; /* Space between items */
     border: 3px solid #ED2939;
     padding: 20px;
-    max-width: 100%; /* Allow items to take full width */
+    margin-bottom: 20px; /* Space between items */
+    box-sizing: border-box; /* Include border and padding in element's total width and height */
 }
 
 .image-item img {
     max-width: 300px; /* Limit the image width */
     height: auto;
     margin-right: 20px; /* Space between image and text */
-    display: block; /* Ensure image is displayed properly */
 }
 
 .image-details {
@@ -565,11 +559,21 @@ html, body {
 }
 
 .image-details a {
+    display: inline-block; /* Fit to content */
     padding: 10px 20px; /* Padding for the link */
     background-color: #ED2939; /* Background color for the link */
     color: #abb8c3; /* Text color for the link */
     text-decoration: none; /* Remove underline */
+    border: 2px solid #ED2939; /* Border around the text */
     border-radius: 8px; /* Rounded corners */
+    margin-top: 10px; /* Space between text and button */
+    box-sizing: border-box; /* Include border and padding in the element’s total width and height */
+    text-align: center; /* Center text within button */
+    line-height: 1.2; /* Adjust line height for better text fit */
+    width: auto; /* Let the width fit the content */
+    min-width: 100px; /* Ensure a minimum width for the button */
+    max-width: 100%; /* Prevent the button from being too wide */
+    white-space: nowrap; /* Prevent text wrapping */
 }
 
 .image-details a:hover {
