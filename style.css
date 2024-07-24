@@ -476,17 +476,20 @@ body {
 }
 
 .social-icon {
-    width: 40px; /* Adjust this size as needed */
-    height: 40px; /* Adjust this size as needed */
+    width: 40px; /* Fixed size for social media icons */
+    height: 40px; /* Fixed size for social media icons */
     margin: 0 10px; /* Spacing between icons */
-    object-fit: contain; /* Ensures aspect ratio is maintained */
+    object-fit: contain; /* Maintain aspect ratio */
+    display: inline-block; /* Ensure proper spacing and alignment */
 }
 
 .social-icon:hover {
     opacity: 0.8; /* Slight hover effect */
 }
 .social-header{
-    font-size: 20px;
+    margin: 0;
+    font-size: 20px; /* Adjust header size as needed */
+    color: #abb8c3; /* Ensure color consistency */
 }
 .content-wrapper {
     flex: 1; /* Ensures that the content area takes up remaining space */
@@ -501,4 +504,10 @@ html, body {
     flex: 1;
     display: flex;
     flex-direction: column;
+}
+
+.social-footer img {
+    width: 40px; /* Ensure image size is consistent */
+    height: 40px; /* Ensure image size is consistent */
+    object-fit: contain; /* Ensure aspect ratio is maintained */
 }
