@@ -1,0 +1,15 @@
+[
+ {
+        "id": 2,
+        "title": "Post Title 2",
+        "description": "This is a description for the second post.",
+        "content": "This is the detailed content of the second post."
+    },
+    {
+        "id": 1,
+        "title": "Post Title 1",
+        "description": "This is a description for the first post.",
+        "message": "This is a special announcement for the first post.",
+        "content": "This is the detailed content of the first post."
+    }
+]

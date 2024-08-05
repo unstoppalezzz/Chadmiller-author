@@ -9,60 +9,60 @@
     <title>Enter if you dare...</title>
 </head>
 <body>
-    <div class="container">
-        <input type="checkbox" id="check">
-        <nav>
-            <div class="left">
-                <div class="icon">CHAD MILLER</div>
-            </div>
-            <div class="search_box">
-                <input id="search-box" type="search" placeholder="Search here" autocomplete="off">
-                <span class="fa fa-search" id="search-icon"></span>
-                <div id="suggestions"></div>
-            </div>
-            <ul id="pages">
-                <li class="link"><a href="media&videos.html">media and videos</a></li>
-                <li class="link"><a href="index.html">enter if you dare</a></li>
-                <li class="link"><a href="index.html">home</a></li>
-                <li class="link"><a href="publications.html">publications</a></li>
-                <li class="link"><a href="blog.html">blog</a></li>
-            </ul>
-            <ol>
-                <!-- Dropdown menu items -->
-                <li><a href="index.html">ENTER IF YOU DARE</a></li>
-                <li><a href="publications.html">PUBLICATIONS</a></li>
-                <li><a href="media&videos.html">MEDIA AND VIDEOS</a></li>
-                <li><a href="blog.html">BLOG</a></li>
-            </ol>
-            <label for="check" class="bar">
-                <span class="fa fa-bars" id="bars"></span>
-                <span class="fa fa-times" id="times"></span>
-            </label>
-        </nav>
-        <main class="content-wrapper">
-            <div class="image-container" id="image-container">
-                <!-- Add your content here -->
-            </div>   
-        </main>
-        <footer class="footer social-footer">
-            <h1 class="social-header">Follow Us!</h1>
-            <a href="https://www.youtube.com/@Chadmiller-author" target="_blank">
-                <img src="icons/youtube.png" alt="YouTube" class="social-icon">
-            </a>
-            <a href="https://www.reddit.com/r/Chadmiller_author/" target="_blank">
-                <img src="icons/reddit.png" alt="Reddit" class="social-icon">
-            </a>
-            <a href="https://www.instagram.com/chadmillerauthor/" target="_blank">
-                <img src="icons/instagram.png" alt="Instagram" class="social-icon">
-            </a>
-            <a href="https://www.facebook.com/chadmillerauthor/" target="_blank">
-                <img src="icons/facebook.png" alt="Facebook" class="social-icon">
-            </a>
-        </footer>
-        <footer class="footer">
-            <p>© 2024 unstoppalezzz. All rights reserved.</p>
-        </footer>
+    <input type="checkbox" id="check">
+    <nav>
+        <div class="left">
+            <div class="icon">CHAD MILLER</div>
+        </div>
+        <div class="search_box">
+            <input id="search-box" type="search" placeholder="Search here" autocomplete="off">
+            <span class="fa fa-search" id="search-icon"></span>
+            <div id="suggestions"></div>
+        </div>
+        <ul id="pages">
+            <li class="link"><a href="media&videos.html">media and videos</a></li>
+            <li class="link"><a href="index.html">enter if you dare</a></li>
+            <li class="link"><a href="index.html">home</a></li>
+            <li class="link"><a href="publications.html">publications</a></li>
+            <li class="link"><a href="blog.html">blog</a></li>
+        </ul>
+        <ol>
+            <!-- Dropdown menu items -->
+            <li><a href="index.html">ENTER IF YOU DARE</a></li>
+            <li><a href="publications.html">PUBLICATIONS</a></li>
+            <li><a href="media&videos.html">MEDIA AND VIDEOS</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+        </ol>
+        <label for="check" class="bar">
+            <span class="fa fa-bars" id="bars"></span>
+            <span class="fa fa-times" id="times"></span>
+        </label>
+    </nav>
+    <div class="content-wrapper">
+        <div class="blog-list" id="blog-container">
+            <!-- Blog posts will be dynamically added here -->
+        </div>
     </div>
+    <footer class="footer social-footer">
+        <h1 class="social-header">Follow Us!</h1>
+        <a href="https://www.youtube.com/@Chadmiller-author" target="_blank">
+            <img src="icons/youtube.png" alt="YouTube" class="social-icon">
+        </a>
+        <a href="https://www.reddit.com/r/Chadmiller_author/" target="_blank">
+            <img src="icons/reddit.png" alt="Reddit" class="social-icon">
+        </a>
+        <a href="https://www.instagram.com/chadmillerauthor/" target="_blank">
+            <img src="icons/instagram.png" alt="Instagram" class="social-icon">
+        </a>
+        <a href="https://www.facebook.com/chadmillerauthor/" target="_blank">
+            <img src="icons/facebook.png" alt="Facebook" class="social-icon">
+        </a>
+    </footer>
+    <footer class="footer">
+        <p>© 2024 unstoppalezzz. All rights reserved.</p>
+    </footer>
     <script type="text/javascript" src="search-bar.js"></script>
+    <script type="text/javascript" src="display_post.js"></script>
+    <script type="text/javascript" src="idot_check.js"></script>
 </body>
 </html>
