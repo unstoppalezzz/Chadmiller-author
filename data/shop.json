@@ -1,0 +1,23 @@
+[
+    {
+        "id": "book",
+        "name": "Chad Miller's Book",
+        "price": 20,
+        "description": "An inspiring book by Chad Miller.",
+        "image": "images/book.jpg"
+    },
+    {
+        "id": "poster",
+        "name": "Poster",
+        "price": 10,
+        "description": "A poster featuring Chad Miller's work.",
+        "image": "images/poster.jpg"
+    },
+    {
+        "id": "tshirt",
+        "name": "T-shirt",
+        "price": 25,
+        "description": "A stylish t-shirt with Chad Miller's logo.",
+        "image": "images/tshirt.jpg"
+    }
+]
