@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('https://unstoppalezzz.github.io/data/shop.json')
+    fetch('https://raw.githubusercontent.com/unstoppalezzz/Chadmiller-author/main/data/shop.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
             return response.json();
         })
         .then(products => {
-            console.log('Products:', products);  // Add this line to verify products are being loaded
             const shopContainer = document.getElementById('shop-container');
             
             products.forEach(product => {
