@@ -1,6 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
     fetch('/data/shop.json')
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
         .then(products => {
             const shopContainer = document.getElementById('shop-container');
             
@@ -43,5 +48,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     }).render('body');
                 });
             });
+        })
+        .catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
         });
 });
