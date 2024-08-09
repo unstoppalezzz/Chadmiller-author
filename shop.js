@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('https://raw.githubusercontent.com/unstoppalezzz/Chadmiller-author/main/data/shop.json')
+    fetch('data/shop.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
